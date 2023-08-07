@@ -36,6 +36,19 @@
   flex-direction: column;
   align-items: start;
   margin-bottom: var(--size-2xl);
+  position: relative;
+}
+
+.form__error-message {
+  position: absolute;
+  right: 2px;
+  font-weight: 700;
+  color: var(--clr-danger);
+  display: none;
+}
+
+.form__error-message.error {
+  display: block;
 }
 
 .form__email-input label {
@@ -53,9 +66,23 @@
   font-size: var(--size-sm);
 }
 
+.form__email-input.error input {
+  border: 1px solid var(--clr-danger);
+  background-color: whitesmoke;
+  color: var(--clr-danger);
+}
+
+.form__email-input.error input::placeholder {
+  color: var(--clr-danger);
+}
+
+.form__email-input:not(.error) input:focus {
+  border: 1px solid var(--clr-dark-slate-grey);
+}
+
 .form__submit-button {
   color: white;
-  background-color: var(--clr-dark-slate-grey);
+  background: var(--clr-dark-slate-grey);
   width: 100%;
   padding: 10px;
   font-weight: 700;
@@ -212,11 +239,17 @@
   }
 
   .form__submit-button {
+    background: linear-gradient(var(--clr-dark-slate-grey), var(--clr-dark-slate-grey));
+    transition: all 300ms ease-in;
     width: 100%;
     padding: 16px;
     font-weight: 700;
     border-radius: 8px;
     font-size: var(--size-lg);
+  }
+
+  .form__submit-button:hover {
+    background: var(--gd-background);
   }
 }
 

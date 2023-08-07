@@ -6,6 +6,9 @@
   --clr-dark-slate-grey: hsl(234, 29%, 20%);
   --clr-charcoal-grey: hsl(235, 18%, 26%);
   --clr-grey: hsl(231, 7%, 60%);
+  --clr-danger: #dc3545;
+
+  --gd-background: linear-gradient(90deg, rgba(255,83,123,1) 0%, rgba(255,105,58,1) 100%); 
 
   /* sizes */
   --size-xxs: 0.5rem;
@@ -29,6 +32,7 @@
   box-sizing: border-box;
   margin: 0;
   line-height: calc(1em + 0.3rem);
+
 }
 
 html {
