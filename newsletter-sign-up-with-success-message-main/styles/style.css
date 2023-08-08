@@ -8,7 +8,7 @@
   --clr-grey: hsl(231, 7%, 60%);
   --clr-danger: #dc3545;
 
-  --gd-background: linear-gradient(90deg, rgba(255,83,123,1) 0%, rgba(255,105,58,1) 100%); 
+  --gd-background: linear-gradient(90deg, rgba(255, 83, 123, 1) 0%, rgba(255, 105, 58, 1) 100%);
 
   /* sizes */
   --size-xxs: 0.5rem;
@@ -32,7 +32,6 @@
   box-sizing: border-box;
   margin: 0;
   line-height: calc(1em + 0.3rem);
-
 }
 
 html {

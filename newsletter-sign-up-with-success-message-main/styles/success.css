@@ -1,0 +1,110 @@
+:root {
+  --clr-slate400: #94a3b8;
+  --clr-slate600: #475569;
+  --clr-slate800: #1e293b;
+  --clr-tomato: hsl(4, 100%, 67%);
+  --clr-dark-slate-grey: hsl(234, 29%, 20%);
+  --clr-charcoal-grey: hsl(235, 18%, 26%);
+  --clr-grey: hsl(231, 7%, 60%);
+  --clr-danger: #dc3545;
+
+  --gd-background: linear-gradient(90deg, rgba(255, 83, 123, 1) 0%, rgba(255, 105, 58, 1) 100%);
+
+  /* sizes */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+.success {
+  padding: 1.2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.success__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex: 1;
+  margin-top: 35%;
+}
+
+.success__title {
+  font-size: var(--size-4xl);
+  margin: 2rem 0;
+}
+
+.success__description {
+  font-size: var(--size-base);
+  max-width: 50ch;
+}
+
+.success__form button {
+  color: white;
+  background: var(--clr-dark-slate-grey);
+  width: 100%;
+  padding: 14px;
+  font-weight: 700;
+  border-radius: 8px;
+  font-size: var(--size-sm);
+}
+
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+  .success {
+    padding: 2rem;
+    display: block;
+    height: fit-content;
+  }
+  
+  .success__content {
+    display: block;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+  }
+  
+  .success__description {
+    max-width: 40ch;
+  }
+  
+  .success__form-button {
+    background: linear-gradient(var(--clr-dark-slate-grey), var(--clr-dark-slate-grey));
+    padding: 16px;
+    font-size: var(--size-base);
+  }
+
+  .success__form-button:hover {
+    background: var(--gd-background);
+  }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

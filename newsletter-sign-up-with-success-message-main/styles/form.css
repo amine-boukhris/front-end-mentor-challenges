@@ -240,7 +240,6 @@
 
   .form__submit-button {
     background: linear-gradient(var(--clr-dark-slate-grey), var(--clr-dark-slate-grey));
-    transition: all 300ms ease-in;
     width: 100%;
     padding: 16px;
     font-weight: 700;
