@@ -12,7 +12,7 @@ form.addEventListener("submit", async (event) => {
   }
 
   try {
-    const response = await fetch("url", {
+    const response = await fetch("http://localhost:3000/subscribe", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -21,7 +21,7 @@ form.addEventListener("submit", async (event) => {
     });
 
     if (response.ok) {
-      const data = await response.json();
+      const data = await response.text();
       console.log("Email added successfully:", data);
     } else {
       console.error("Error adding email:", response.statusText);

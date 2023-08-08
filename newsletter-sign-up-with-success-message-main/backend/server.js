@@ -51,13 +51,5 @@ app.post(
 );
 
 app.listen(port, () => {
-  console.log("listening on port: ", port);
+  console.log("listening on port:", port);
 });
-
-// Close the database connection on application termination
-// process.on("SIGINT", () => {
-//   client.close(() => {
-//     console.log("MongoDB connection closed.");
-//     process.exit(0);
-//   });
-// });
