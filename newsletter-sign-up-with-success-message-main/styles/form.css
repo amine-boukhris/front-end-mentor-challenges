@@ -2,12 +2,20 @@
   width: 100%;
 }
 
+.form__image.none {
+  display: none;
+}
+
 .form__image img {
   width: 100%;
 }
 
 .form__content__container {
   padding: var(--size-base);
+}
+
+.form__content__container.none {
+  display: none;
 }
 
 .form__title {
@@ -66,7 +74,7 @@
   font-size: var(--size-sm);
 }
 
-.form__email-input.error input {
+.form__email-input input.error {
   border: 1px solid var(--clr-danger);
   background-color: whitesmoke;
   color: var(--clr-danger);
