@@ -1,0 +1,41 @@
+.result {
+    display: flex;
+    flex-direction: column;
+}
+
+.result__result {
+    display: flex;
+    gap: 1rem;
+}
+
+.result__value {
+    font-size: var(--size-6xl);
+    font-style: italic;
+    font-weight: 800;
+    color: var(--clr-purple);
+}
+
+.result__word {
+    font-style: italic;
+    font-weight: 800;
+    font-size: var(--size-6xl);
+}
+
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

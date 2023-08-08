@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="./styles/modern-normalize.css">
   <link rel="stylesheet" href="./styles/utils.css">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/wrapper.css">
+  <link rel="stylesheet" href="./styles/form.css">
+  <link rel="stylesheet" href="./styles/result.css">
 </head>
 
 <body>
@@ -46,20 +49,22 @@
       </form>
     </div>
     <div class="result">
-      <div class="result__days">
-        <span class="result__days-value">--</span>
-        <span class="result__days-word">days</span>
+      <div class="result__result" id="result__years">
+        <span id="result__years-value" class="result__value">38</span>
+        <span id="result__years-word" class="result__word">years</span>
       </div>
-      <div class="result__months">
-        <span class="result__months-value">--</span>
-        <span class="result__months-word">months</span>
+      <div class="result__result" id="result__months">
+        <span id="result__months-value" class="result__value">3</span>
+        <span id="result__months-word" class="result__word">months</span>
       </div>
-      <div class="result__years">
-        <span class="result__years-value">--</span>
-        <span class="result__years-word">years</span>
+      <div class="result__result" id="result__days">
+        <span id="result__days-value" class="result__value">26</span>
+        <span id="result__days-word" class="result__word">days</span>
       </div>
     </div>
   </div>
+
+  <script src="src/script.js"></script>
 </body>
 
 </html>

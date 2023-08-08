@@ -14,8 +14,6 @@
   --clr-off-black: hsl(0, 0%, 8%);
   --clr-danger: #dc3545;
 
-  --gd-background: linear-gradient(90deg, rgba(255, 83, 123, 1) 0%, rgba(255, 105, 58, 1) 100%);
-
   /* sizes */
   --size-xxs: 0.5rem;
   --size-xs: 0.75rem;
@@ -46,7 +44,8 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  color: var(--clr-dark-slate-grey);
+  background-color: var(--clr-off-white);
+  color: var(--clr-off-black);
 }
 
 img,
@@ -55,12 +54,7 @@ video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
   user-select: none;
-}
-
-input {
-  font-size: 32px;
 }
 
 button {
