@@ -15,7 +15,7 @@
 
 .form__input label {
   text-transform: uppercase;
-  font-size: var(--size-sm);
+  font-size: var(--size-xs);
   color: var(--clr-smokey-grey);
   letter-spacing: 3px;
 }
@@ -35,11 +35,10 @@
 }
 
 .form__error-text {
-  display: none;
   color: var(--clr-danger);
   font-weight: 400;
   font-style: italic;
-  font-size: var(--size-base);
+  font-size: var(--size-xs);
 }
 
 .form__submit {
