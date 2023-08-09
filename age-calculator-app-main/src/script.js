@@ -14,9 +14,10 @@ form.addEventListener("submit", (e) => {
   errorTexts.forEach((errorText) => {
     errorText.textContent = "";
   });
-  labels.forEach(label => {
+  labels.forEach((label) => {
     label.style.color = "hsl(0, 1%, 44%)";
-  })
+  });
+  resetResults();
 
   // checking for empty fields
   let quit = false;
@@ -49,9 +50,33 @@ form.addEventListener("submit", (e) => {
     return;
   }
 
-  // passed all checks
-  console.log("tests passed");
+  const { days, months, years } = dateDifference(day, month, year);
+
+  daysValue.textContent = days;
+  monthsValue.textContent = months;
+  yearsValue.textContent = years;
 });
+
+function dateDifference(day, month, year) {
+  const currentDate = new Date();
+
+  let days = currentDate.getDate() - day;
+  let months = currentDate.getMonth() + 1 - month;
+  let years = currentDate.getFullYear() - year;
+
+  if (days < 0) {
+    months--;
+    const daysInLastMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 0).getDate();
+    days += daysInLastMonth;
+  }
+
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+
+  return { days, months, years };
+}
 
 function isValidDate(day, month, year) {
   // is date invalid?
@@ -67,9 +92,9 @@ function isValidDate(day, month, year) {
 
   // is the date in the future?
   const currentDate = new Date();
-  const currentYear = currentDate.getFullYear;
-  const currentMonth = currentDate.getMonth;
-  const currentDay = currentDate.getDay;
+  const currentYear = currentDate.getFullYear();
+  const currentMonth = currentDate.getMonth();
+  const currentDay = currentDate.getDate();
   if (
     year > currentYear ||
     (year === currentYear && month > currentMonth) ||
