@@ -60,18 +60,6 @@
   margin: 0 auto;
 }
 
-/* xs */
-/* @media (min-width: 475px) {} */
-
-/* sm */
-/* @media (min-width: 640px) {} */
-
-/* md */
-/* @media (min-width: 768px) {} */
-
-/* lg */
-/* @media (min-width: 1024px) {} */
-
 /* xl */
 @media (min-width: 1280px) {
   .form__input input {
@@ -93,6 +81,3 @@
     background-color: var(--clr-off-black);
   }
 }
-
-/* 2xl */
-/* @media (min-width: 1536px) {} */

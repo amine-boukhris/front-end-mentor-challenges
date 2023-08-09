@@ -52,9 +52,26 @@ form.addEventListener("submit", (e) => {
 
   const { days, months, years } = dateDifference(day, month, year);
 
-  daysValue.textContent = days;
-  monthsValue.textContent = months;
-  yearsValue.textContent = years;
+  // animating the values
+  daysValue.textContent = 0;
+  monthsValue.textContent = 0;
+  yearsValue.textContent = 0;
+
+  let intervalDuration = 35;
+  const intervalId = setInterval(() => {
+    if (daysValue.textContent < days) {
+      daysValue.textContent++;
+    }
+    if (monthsValue.textContent < months) {
+      monthsValue.textContent++;
+    }
+    if (yearsValue.textContent < years) {
+      yearsValue.textContent++;
+    }
+    if (daysValue.textContent == days && monthsValue.textContent < months && yearsValue.textContent < years) {
+      clearInterval(intervalId);
+    }
+  }, intervalDuration);
 });
 
 function dateDifference(day, month, year) {
