@@ -1,0 +1,39 @@
+.mobile-navigation {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 65%;
+
+    background-color: white;
+    padding-top: 6rem;
+}
+
+.mobile-navigation__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header__menu-bars {
+    position: sticky;
+    z-index: 999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobile-navigation__none {
+    display: none;
+}
