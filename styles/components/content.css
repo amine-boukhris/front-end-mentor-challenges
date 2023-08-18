@@ -1,0 +1,36 @@
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+@media (min-width: 1280px) {
+    .content {
+        flex-direction: row;
+        column-gap: 2.5rem;
+        /* margin-top: 4rem !important; */
+    }
+
+    .content .hero {
+        flex: 2.8;
+    }
+
+    .content .sidepanel {
+        flex: 1;
+    }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

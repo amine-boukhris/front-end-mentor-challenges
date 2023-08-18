@@ -1,0 +1,114 @@
+.sidepanel {
+    background-color: var(--clr-very-dark-blue);
+    padding: 1.8rem !important;
+    margin-top: 3rem;
+    /* display: flex;
+    flex-direction: column;
+    gap: var(--size-base); */
+}
+
+.sidepanel__title {
+    color: var(--clr-beige);
+    font-size: var(--size-4xl);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.sidepanel__link {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.sidepanel__link a {
+    color: var(--clr-light);
+    font-size: var(--size-xl);
+    font-weight: 700;
+}
+
+.sidepanel__link p {
+    color: var(--clr-slate400);
+    font-size: var(--size-lg);
+    line-height: 1.5rem;
+}
+
+.sidepanel__line {
+    background-color: var(--clr-slate600);
+    width: 100%;
+    height: 2px;
+    margin: 0 auto;
+}
+
+
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+    .sidepanel__link a {
+        font-size: var(--size-xl);
+    }
+
+    .sidepanel__link p {
+        font-size: var(--size-lg);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .sidepanel {
+        background-color: var(--clr-very-dark-blue);
+        padding: 3rem !important;
+    }
+
+    .sidepanel__title {
+        font-size: var(--size-5xl);
+        margin-bottom: 3rem;
+    }
+
+    .sidepanel__link {
+        margin: 2.2rem 0;
+        gap: 1rem;
+    }
+    
+    .sidepanel__link a {
+        font-size: var(--size-2xl);
+    }
+    
+    .sidepanel__link p {
+        color: var(--clr-slate400);
+        font-size: var(--size-xl);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .sidepanel {
+        padding: 1.8rem 1.5rem !important;
+        margin-top: 0;
+        height: fit-content;
+    }
+
+    .sidepanel__title {
+        font-size: var(--size-4xl);
+        margin-bottom: 3rem;
+    }
+
+    .sidepanel__link a {
+        font-size: var(--size-2xl);
+    }
+    
+    .sidepanel__link p {
+        color: var(--clr-slate400);
+        font-size: var(--size-xl);
+        line-height: 2rem;
+    }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
