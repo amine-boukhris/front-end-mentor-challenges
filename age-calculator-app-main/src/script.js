@@ -68,7 +68,7 @@ form.addEventListener("submit", (e) => {
     if (yearsValue.textContent < years) {
       yearsValue.textContent++;
     }
-    if (daysValue.textContent == days && monthsValue.textContent < months && yearsValue.textContent < years) {
+    if (daysValue.textContent == days && monthsValue.textContent == months && yearsValue.textContent == years) {
       clearInterval(intervalId);
     }
   }, intervalDuration);
